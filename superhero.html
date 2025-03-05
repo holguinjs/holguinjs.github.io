@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superheroes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        a img {
+            height: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Superheroes Table</h1>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Alias</th>
+            <th>Image</th>
+            <th>Superpower</th>
+            <th>Weakness</th>
+        </tr>
+        <tr>
+            <td>Bruce Wayne</td>
+            <td>Batman</td>
+            <td><a href="images/batman_full.jpg" target="_blank"><img src="images/batman.jpg" alt="Batman"></a></td>
+            <td>Peak human strength, genius intellect, and martial arts skills</td>
+            <td>Human frailty (no superpowers)</td>
+        </tr>
+        <tr>
+            <td>Clark Kent</td>
+            <td>Superman</td>
+            <td><a href="images/superman_full.jpg" target="_blank"><img src="images/superman.jpg" alt="Superman"></a></td>
+            <td>Super strength, flight, heat vision, and invulnerability</td>
+            <td>Kryptonite</td>
+        </tr>
+        <tr>
+            <td>Oliver Queen</td>
+            <td>Green Arrow</td>
+            <td><a href="images/greenarrow_full.jpg" target="_blank"><img src="images/greenarrow.jpg" alt="Green Arrow"></a></td>
+            <td>Master archer, skilled hand-to-hand combatant</td>
+            <td>Lack of superhuman abilities</td>
+        </tr>
+        <tr>
+            <td>Wade Wilson</td>
+            <td>Deadpool</td>
+            <td><a href="images/deadpool_full.jpg" target="_blank"><img src="images/deadpool.jpg" alt="Deadpool"></a></td>
+            <td>Regeneration, expert marksman, and skilled hand-to-hand combatant</td>
+            <td>Overconfidence, emotional instability</td>
+        </tr>
+    </table>
+
+</body>
+</html>
