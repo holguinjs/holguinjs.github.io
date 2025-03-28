@@ -3,48 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Web Application</title>
+    <title>Basket Hoop Game</title>
     <link rel="stylesheet" href="css/application.css">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: url('images/basketball-court.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        h1, h2 {
+            text-shadow: 2px 2px 5px black;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        iframe {
+            border: none;
+            margin-top: 20px;
+        }
+        table {
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.8);
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Embedded Web Application</h1>
-    
-    <h2>Overview</h2>
-    <p>This web application allows users to play a fun and interactive game directly from our website. The game is simple to learn but offers a challenge for all skill levels.</p>
-    
-    <h2>How to Play</h2>
-    <p>Follow these steps to get started:</p>
-    <ol>
-        <li>Click inside the game frame to activate the controls.</li>
-        <li>Use the arrow keys to navigate.</li>
-        <li>Reach the highest score possible by avoiding obstacles.</li>
-    </ol>
-    
-    <iframe src="https://cloud.onlinegames.io/games/2024/construct/311/basket-hoop/index-og.html" width="800" height="600" style="border: none;"></iframe>
-    
-    <h2>Game Screenshots</h2>
-    <img src="images/screenshot1.jpg" alt="Game screenshot 1" width="300">
-    <img src="images/screenshot2.jpg" alt="Game screenshot 2" width="300">
-    <img src="images/screenshot3.jpg" alt="Game screenshot 3" width="300">
-    
-    <h2>Game Controls</h2>
-    <table border="1">
-        <tr>
-            <th>Key</th>
-            <th>Action</th>
-        </tr>
-        <tr>
-            <td>Arrow Keys</td>
-            <td>Move character</td>
-        </tr>
-        <tr>
-            <td>Spacebar</td>
-            <td>Jump</td>
-        </tr>
-        <tr>
-            <td>P</td>
-            <td>Pause the game</td>
-        </tr>
-    </table>
+    <div class="container">
+        <h1>Welcome to Basket Hoop</h1>
+        
+        <h2>About the Game</h2>
+        <p>In <b>Basket Hoop</b>, gravity is your only challenge, and tapping is your sole weapon. Your goal is simple: make the ball jump and send it inside the hoop!</p>
+        <p>Make as many baskets as you can in a limited amount of time. It’s like Skeeball in the arcade, but with longer play sessions!</p>
+        
+        <h2>How to Play</h2>
+        <ol>
+            <li>Tap or click anywhere on the screen to make the ball jump.</li>
+            <li>You can jump mid-air to control the angle and land the ball in the hoop.</li>
+            <li>You have 5 seconds to score. If you miss, the ball resets for another attempt.</li>
+            <li>Successful shots create a new net in a different position.</li>
+            <li>Keep scoring before time runs out to beat your high score!</li>
+        </ol>
+        
+        <iframe src="https://cloud.onlinegames.io/games/2024/construct/311/basket-hoop/index-og.html" width="800" height="600"></iframe>
+        
+        <h2>Game Screenshots</h2>
+        <img src="images/screenshot1.jpg" alt="Game screenshot 1" width="300">
+        <img src="images/screenshot2.jpg" alt="Game screenshot 2" width="300">
+        <img src="images/screenshot3.jpg" alt="Game screenshot 3" width="300">
+        
+        <h2>Game Controls</h2>
+        <table border="1">
+            <tr>
+                <th>Device</th>
+                <th>Control</th>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>Click the mouse to shoot</td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>Tap the screen to shoot</td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
