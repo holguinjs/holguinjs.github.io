@@ -26,10 +26,30 @@
             border: none;
             margin-top: 20px;
         }
+        .screenshots img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
         table {
-            margin: 0 auto;
-            background: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
             color: black;
+            border-collapse: collapse;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid black;
+        }
+        th {
+            background: #ff6600;
+            color: white;
         }
     </style>
 </head>
@@ -53,12 +73,14 @@
         <iframe src="https://cloud.onlinegames.io/games/2024/construct/311/basket-hoop/index-og.html" width="800" height="600"></iframe>
         
         <h2>Game Screenshots</h2>
-        <img src="images/Logo-Hoop.png" alt="Game screenshot 1" width="300">
-        <img src="images/Court-Selection.png" alt="Game screenshot 2" width="300">
-        <img src="images/Ball-Selection.png" alt="Game screenshot 3" width="300">
+        <div class="screenshots">
+            <img src="images/Logo-Hoop.png" alt="Game screenshot 1">
+            <img src="images/Court-Selection.png" alt="Game screenshot 2">
+            <img src="images/Ball-Selection.png" alt="Game screenshot 3">
+        </div>
         
         <h2>Game Controls</h2>
-        <table border="1">
+        <table>
             <tr>
                 <th>Device</th>
                 <th>Control</th>
@@ -75,5 +97,3 @@
     </div>
 </body>
 </html>
-
-
