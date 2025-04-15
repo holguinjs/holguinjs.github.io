@@ -1,1 +1,10 @@
+@font-face {
+  font-family: 'HeadingFont';
+  src: url('fonts/HeadingFont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'BodyFont';
+  src: url('fonts/BodyFont.woff2') format('woff2');
+}
 
