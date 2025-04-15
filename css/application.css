@@ -8,3 +8,35 @@
   src: url('fonts/BodyFont.woff2') format('woff2');
 }
 
+/* Use custom fonts */
+h1, h2, h3 {
+  font-family: 'HeadingFont', sans-serif;
+  color: #2c3e50;
+}
+
+body {
+  font-family: 'BodyFont', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Additional rules */
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
