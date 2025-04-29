@@ -1,156 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basket Hoop Game</title>
-  <link rel="stylesheet" href="css/application.css">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: url('images/basketball-court.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      padding: 10px;
-    }
-
-    h1, h2 {
-      text-shadow: 2px 2px 5px black;
-      margin: 1rem 0;
-    }
-
-    p, li, td, th {
-      font-size: clamp(1rem, 2.5vw, 1.2rem);
-      line-height: 1.5;
-    }
-
-    .container {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    iframe {
-      width: 100%;
-      max-width: 100%;
-      height: auto;
-      aspect-ratio: 4 / 3;
-      margin-top: 20px;
-      border: none;
-    }
-
-    .screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    .screenshots img {
-      width: 100%;
-      max-width: 300px;
-      height: auto;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    table {
-      width: 100%;
-      max-width: 600px;
-      margin: 20px auto;
-      background: rgba(255, 255, 255, 0.9);
-      color: black;
-      border-collapse: collapse;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    }
-
-    th, td {
-      padding: 15px;
-      border: 1px solid black;
-      text-align: left;
-    }
-
-    th {
-      background: black;
-      color: white;
-    }
-
-    a img {
-      margin-top: 20px;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 5px;
-      }
-
-      .container {
-        padding: 10px;
-      }
-
-      iframe {
-        aspect-ratio: 3 / 2;
-      }
-
-      th, td {
-        padding: 10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Hoop Game</title>
+    <link rel="stylesheet" href="css/application.css">
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: url('images/basketball-court.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        h1, h2 {
+            text-shadow: 2px 2px 5px black;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        iframe {
+            border: none;
+            margin-top: 20px;
+        }
+        .screenshots img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 10px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        table {
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.9);
+            color: black;
+            border-collapse: collapse;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid black;
+        }
+        th {
+            background: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to Basket Hoop</h1>
-
-    <h2>About the Game</h2>
-    <p><strong>Basket Hoop</strong> is a fast-paced tapping game where gravity is your only challenge. Make as many baskets as possible before time runs out!</p>
-
-    <h2>How to Play</h2>
-    <ol>
-      <li>Tap or click to make the ball jump.</li>
-      <li>Control the angle mid-air for better shots.</li>
-      <li>You have 5 seconds to score each shot.</li>
-      <li>Each basket changes the net's position.</li>
-      <li>Keep scoring to beat your high score!</li>
-    </ol>
-
-    <iframe src="https://cloud.onlinegames.io/games/2024/construct/311/basket-hoop/index-og.html" allowfullscreen></iframe>
-
-    <h2>Game Screenshots</h2>
-    <div class="screenshots">
-      <a href="images/Logo-Hoop.png" target="_blank"><img src="images/Logo-Hoop.png" alt="Game screenshot 1"></a>
-      <a href="images/Court-Selection.png" target="_blank"><img src="images/Court-Selection.png" alt="Game screenshot 2"></a>
-      <a href="images/Ball-Selection.png" target="_blank"><img src="images/Ball-Selection.png" alt="Game screenshot 3"></a>
+    <div class="container">
+        <h1>Welcome to Basket Hoop</h1>
+        
+        <h2>About the Game</h2>
+        <p>In <b>Basket Hoop</b>, gravity is your only challenge, and tapping is your sole weapon. Your goal? Simple: make the ball jump and send it inside the hoop!</p>
+        <p>Make as many baskets as you can in a limited amount of time. Collect coins with every basket you make to upgrade your ball and court! </p>
+        
+        <h2>How to Play</h2>
+        <ol>
+            <li>Tap or click anywhere on the screen to make the ball jump.</li>
+            <li>You can jump mid-air to control the angle and land the ball in the hoop.</li>
+            <li>You have 5 seconds to score. If you miss, the ball resets for another attempt.</li>
+            <li>Successful shots create a new net in a different position.</li>
+            <li>Keep scoring before time runs out to beat your high score!</li>
+        </ol>
+        
+        <iframe src="https://cloud.onlinegames.io/games/2024/construct/311/basket-hoop/index-og.html" width="800" height="600"></iframe>
+        
+        <h2>Game Screenshots</h2>
+        <div class="screenshots">
+            <img src="images/Logo-Hoop.png" alt="Game screenshot 1">
+            <img src="images/Court-Selection.png" alt="Game screenshot 2">
+            <img src="images/Ball-Selection.png" alt="Game screenshot 3">
+        </div>
+        
+        <h2>Game Controls</h2>
+        <table>
+            <tr>
+                <th>Device</th>
+                <th>Control</th>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>Click the mouse to shoot</td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td>Tap the screen to shoot</td>
+            </tr>
+        </table>
+        <p><a href="index.html"><img height="50" src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button"></a></p> 
     </div>
-
-    <h2>Game Controls</h2>
-    <table>
-      <tr>
-        <th>Device</th>
-        <th>Control</th>
-      </tr>
-      <tr>
-        <td>Computer</td>
-        <td>Click the mouse to shoot</td>
-      </tr>
-      <tr>
-        <td>Mobile</td>
-        <td>Tap the screen to shoot</td>
-      </tr>
-    </table>
-
-    <p><a href="index.html"><img height="50" src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button"></a></p>
-  </div>
 </body>
 </html>
