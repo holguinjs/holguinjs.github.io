@@ -1,29 +1,98 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Hockey Moments</title>
-        <link rel="stylesheet" href="css/main.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey Moments</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    </head>
-    <body>
-        <h1>Best Hockey Momements on the Web </h1>
-            <p>This page shows all different kinds of hockey content all in one place! From funny moments to best hits find all the videos you are looking for below!</p>
-      
-        <h2>Funniest Momements in Hockey</h2>
-            <p>This video is 10 mintues of some of hockeys funniest momements ever caught on video. From own goals to bloopers at the all star competition you can expect to have a good chuckle at this video. To access the video click the link below!</p>
-                <a href="https://youtu.be/OxB4P6stVeQ?si=9kt3DBl_D9SI8hBu">Funniest Momements Vid</a>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+      color: #222;
+      padding: 20px;
+    }
 
-        <h2>Greatest Saves in NHL</h2>
-            <p>This 12 year old video is still considered one of the best hockey goalie edit ever made. With 2.2 million views it makes it one of the more watched NHL save videos this video had inspired young goalies and helped shine light on how amazing of a postion in sports it is. For 7 minutes of attention grabbing saves click the link below!</p>
-                <a href="https://youtu.be/bFq2dGSVdOI?si=iJVNRLHzo3PU_kr4">NHL Saves</a>
+    h1 {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      text-align: center;
+      margin-bottom: 20px;
+      color: #003366;
+    }
 
-        <h2>Biggest Hits in NHL</h2>
-            <p>This video isn't for the faint of heart. From open ice hits to glass shattering blows this has everything every classic rough house hockey fan will love. If you need any reminder to keep your head up crossing through center ice this video will help do the trick. (Warning this video does contain people getting injured so we recommend you click the link below at your own risk) </p>
-                <a href="https://youtu.be/-5xkMNIt-5k?si=A8gCdFsua-Dm9gL7">The BIGGEST Hits Ever</a>
-        <p><a href="index.html"><img height="50" src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button"></a></p> 
-    </body>
+    h2 {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      margin-top: 25px;
+      color: #005599;
+    }
+
+    p {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      margin: 10px 0;
+    }
+
+    a {
+      display: inline-block;
+      margin: 10px 0 20px;
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: clamp(1rem, 2.2vw, 1.2rem);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .home-link img {
+      height: 40px;
+      width: auto;
+      margin-top: 30px;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 15px;
+      }
+
+      .home-link img {
+        height: 35px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Best Hockey Moments on the Web</h1>
+
+  <p>This page shows all different kinds of hockey content all in one place! From funny moments to best hits, find all the videos you're looking for below!</p>
+
+  <h2>Funniest Moments in Hockey</h2>
+  <p>This video is 10 minutes of some of hockey's funniest moments ever caught on video. From own goals to bloopers at the All-Star competition, expect a good chuckle. Click the link below to watch:</p>
+  <a href="https://youtu.be/OxB4P6stVeQ?si=9kt3DBl_D9SI8hBu" target="_blank">Watch Funniest Moments</a>
+
+  <h2>Greatest Saves in NHL</h2>
+  <p>This 12-year-old video is still one of the best goalie edits ever made. With over 2.2 million views, it has inspired countless goalies and highlights the artistry of the position. Click below to watch 7 minutes of greatness:</p>
+  <a href="https://youtu.be/bFq2dGSVdOI?si=iJVNRLHzo3PU_kr4" target="_blank">Watch NHL Saves</a>
+
+  <h2>Biggest Hits in NHL</h2>
+  <p>This video isn't for the faint of heart. It showcases everything from open ice hits to glass-shattering collisions. Need a reminder to keep your head up? This will do the trick. (⚠️ Warning: Contains footage of injuries.)</p>
+  <a href="https://youtu.be/-5xkMNIt-5k?si=A8gCdFsua-Dm9gL7" target="_blank">Watch Biggest Hits</a>
+
+  <div class="home-link">
+    <!-- ✅ Make sure this image is under 50 KB -->
+    <a href="index.html">
+      <img src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button">
+    </a>
+  </div>
+
+</body>
 </html>
-
-
