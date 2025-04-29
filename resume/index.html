@@ -2,10 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joseph Holguin - Resume</title>
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      background-color: #222;
+      padding: 10px;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    }
+
+    header {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    header h1 {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    header p {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: #555;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 15px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+
+    section {
+      margin-top: 30px;
+      padding: 15px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      margin-bottom: 10px;
+      color: #222;
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+    }
+
+    section ul, section p {
+      font-size: clamp(0.95rem, 2.3vw, 1.1rem);
+    }
+
+    footer {
+      text-align: center;
+      margin: 30px 0 10px;
+      font-size: clamp(0.9rem, 2vw, 1rem);
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      section {
+        padding: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -21,14 +116,15 @@
   <header>
     <h1>Joseph Holguin</h1>
     <p>Aspiring Sports Administrator</p>
-    <img src="images/profile-pic.jpg" alt="Profile Photo">
+    <!-- ✅ Make sure this image is compressed under 50 KB -->
+    <img src="images/profile-pic-thumbnail.jpg" alt="Profile Photo">
   </header>
 
   <section id="contact">
     <h2>Contact Info</h2>
-    <p>Address: 1758 6th Ave, Greeley, CO</p>
-    <p>Phone: 720-318-1983</p>
-    <p>Email: Josephholguin883@yahoo.com</p>
+    <p><strong>Address:</strong> 1758 6th Ave, Greeley, CO</p>
+    <p><strong>Phone:</strong> 720-318-1983</p>
+    <p><strong>Email:</strong> Josephholguin883@yahoo.com</p>
   </section>
 
   <section id="education">
@@ -88,6 +184,3 @@
 
 </body>
 </html>
-
-
-
