@@ -6,34 +6,63 @@
     <title>Basket Hoop Game</title>
     <link rel="stylesheet" href="css/application.css">
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             text-align: center;
             font-family: Arial, sans-serif;
             background: url('images/basketball-court.jpg') no-repeat center center fixed;
             background-size: cover;
             color: white;
+            margin: 0;
+            padding: 20px;
         }
+
         h1, h2 {
             text-shadow: 2px 2px 5px black;
+            font-size: clamp(1.8rem, 5vw, 2.5rem);
         }
+
+        p, li {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+        }
+
         .container {
             background: rgba(0, 0, 0, 0.7);
             display: inline-block;
             padding: 20px;
             border-radius: 10px;
+            max-width: 100%;
         }
+
         iframe {
             border: none;
             margin-top: 20px;
+            width: 100%;
+            max-width: 800px;
+            height: 56.25vw; /* 16:9 ratio for responsiveness */
+            max-height: 600px;
         }
+
+        .screenshots {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .screenshots img {
-            width: 300px;
-            height: 200px;
+            width: 90%;
+            max-width: 300px;
+            height: auto;
+            aspect-ratio: 3/2;
             object-fit: cover;
             border-radius: 15px;
             margin: 10px;
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
         }
+
         table {
             margin: 20px auto;
             background: rgba(255, 255, 255, 0.9);
@@ -42,14 +71,34 @@
             border-radius: 15px;
             overflow: hidden;
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            width: 95%;
+            max-width: 600px;
         }
+
         th, td {
             padding: 15px;
             border: 1px solid black;
+            font-size: clamp(1rem, 2vw, 1.1rem);
         }
+
         th {
             background: black;
             color: white;
+        }
+
+        a img {
+            height: 40px;
+            width: auto;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 480px) {
+            iframe {
+                height: 200px;
+            }
+            a img {
+                height: 35px;
+            }
         }
     </style>
 </head>
@@ -59,7 +108,7 @@
         
         <h2>About the Game</h2>
         <p>In <b>Basket Hoop</b>, gravity is your only challenge, and tapping is your sole weapon. Your goal? Simple: make the ball jump and send it inside the hoop!</p>
-        <p>Make as many baskets as you can in a limited amount of time. Collect coins with every basket you make to upgrade your ball and court! </p>
+        <p>Make as many baskets as you can in a limited amount of time. Collect coins with every basket you make to upgrade your ball and court!</p>
         
         <h2>How to Play</h2>
         <ol>
@@ -69,8 +118,8 @@
             <li>Successful shots create a new net in a different position.</li>
             <li>Keep scoring before time runs out to beat your high score!</li>
         </ol>
-        
-        <iframe src="https://cloud.onlinegames.io/games/2024/construct/311/basket-hoop/index-og.html" width="800" height="600"></iframe>
+
+        <iframe src="https://cloud.onlinegames.io/games/2024/construct/311/basket-hoop/index-og.html"></iframe>
         
         <h2>Game Screenshots</h2>
         <div class="screenshots">
@@ -94,7 +143,12 @@
                 <td>Tap the screen to shoot</td>
             </tr>
         </table>
-        <p><a href="index.html"><img height="50" src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button"></a></p> 
+
+        <p>
+            <a href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button">
+            </a>
+        </p> 
     </div>
 </body>
 </html>
