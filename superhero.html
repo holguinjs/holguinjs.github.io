@@ -10,27 +10,34 @@
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
+            padding: 1rem;
+            overflow-x: hidden;
+            font-size: 4vw; /* Responsive text */
         }
 
         h1 {
             text-align: center;
             margin-top: 30px;
             color: #333;
+            font-size: 6vw;
         }
 
         table {
-            width: 80%;
+            width: 100%;
+            max-width: 100%;
             margin: 20px auto;
             border-collapse: collapse;
             background-color: #fff;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-x: auto;
+            display: block;
         }
 
         th, td {
             padding: 12px;
             border: 1px solid #ddd;
             text-align: left;
+            font-size: 4vw;
         }
 
         th {
@@ -43,12 +50,29 @@
         }
 
         a img {
-            height: 100px;
+            max-width: 100%;
+            height: auto;
             transition: transform 0.3s ease;
+            display: block;
+            margin: 0 auto;
         }
 
         a img:hover {
             transform: scale(1.1);
+        }
+
+        @media (min-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            th, td {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -96,3 +120,4 @@
          <p><a href="index.html"><img height="50" src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button"></a></p> 
 </body>
 </html>
+
