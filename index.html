@@ -7,26 +7,91 @@
     <link rel="stylesheet" href="css/main.css">
 
     <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+            font-size: 4vw; /* Mobile-first sizing */
         }
+
+        h1.title {
+            text-align: center;
+            font-size: 6vw;
+            margin-bottom: 2rem;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 1rem auto;
+            max-width: 80vw;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
         th, td {
-            border: 1px solid black;
-            padding: 8px;
+            border: 1px solid #ccc;
+            padding: 3vw;
             text-align: left;
         }
+
         th {
-            background-color: #f2f2f2;
+            background-color: #e0e0e0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        a {
+            word-break: break-word;
+        }
+
+        a img {
+            height: 10vw;
+            max-height: 50px;
+        }
+
+        /* Desktop styles */
+        @media (min-width: 768px) {
+            body {
+                font-size: 16px;
+                padding: 2rem;
+            }
+
+            h1.title {
+                font-size: 36px;
+            }
+
+            img {
+                max-width: 200px;
+            }
+
+            table {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            th, td {
+                padding: 12px;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <h1 class="title">Welcome to Joseph's Website</h1>
-    
+
     <!-- UNC Bears Logo -->
-    <img src="images/unc-bear-logo.png" alt="UNC Bears Logo" width="200">
-    
+    <img src="images/unc-bear-logo.png" alt="UNC Bears Logo">
+
     <table>
         <thead>
             <tr>
@@ -37,7 +102,7 @@
         <tbody>
             <tr>
                 <td><a href="https://holguinjs.github.io/profile.html">Joseph's Profile</a></td>
-                <td>Get to know me! Dive into my world—my passions, hobbies, and the things that inspire me. </td>
+                <td>Get to know me! Dive into my world—my passions, hobbies, and the things that inspire me.</td>
             </tr>
             <tr>
                 <td><a href="inspire.html">My Hero Patrick Roy</a></td>
@@ -47,20 +112,25 @@
                 <td><a href="amuse.html">Best Hockey Clips</a></td>
                 <td>A collection of the funniest, hardest-hitting, and most jaw-dropping moments in hockey history! From hilarious bloopers to bone-crushing hits and unreal saves—check out the best clips the internet has to offer.</td>
             </tr>
-             <tr>
+            <tr>
                 <td><a href="superhero.html">Superhero Page</a></td>
-                <td>This is a page showcasing my four favorite superheros Batman, Superman, Green Arrow, and Deadpool. This page will not only show you what they look like in action but also give short descriptions on the heros alias, superpowers, and even weaknesses.</td>
+                <td>This is a page showcasing my four favorite superheroes: Batman, Superman, Green Arrow, and Deadpool—with descriptions of their powers and weaknesses.</td>
             </tr>
-             <tr>
+            <tr>
                 <td><a href="application.html">Basket Hoop Game</a></td>
-                <td> This is a fun basketball game that might remind you a little bit of the old popular game Flappy Bird. Get new high scores by making it into the basket before the time runs out and upgrade your court and ball as you earn coins!</td>
+                <td>A fun basketball game similar to Flappy Bird. Score high, earn coins, and upgrade your court and ball!</td>
             </tr>
-             <tr>
+            <tr>
                 <td><a href="resume/index.html">Resume</a></td>
-                <td> This is my personal resume with my Contact Info, School and Job experience, and Skills.</td>
+                <td>My personal resume with contact info, education, work experience, and skills.</td>
             </tr>
         </tbody>
     </table>
- <p><a href="index.html"><img height="50" src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button"></a></p>
+
+    <p style="text-align: center; margin-top: 2rem;">
+        <a href="index.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/61/61972.png" alt="Home Button">
+        </a>
+    </p>
 </body>
 </html>
