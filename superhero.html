@@ -5,76 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superheroes</title>
     
-    <style>
+   <style>
+   
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 1rem;
+        overflow-x: hidden;
+        font-size: 4vw;
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+        font-size: 6vw;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow-x: auto;
+        display: block;
+    }
+
+    th, td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+        font-size: 4vw;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    a img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease;
+        display: block;
+        margin: 0 auto;
+    }
+
+    a img:hover {
+        transform: scale(1.1);
+    }
+
+    /* Desktop styles override */
+    @media (min-width: 768px) {
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 1rem;
-            overflow-x: hidden;
-            font-size: 4vw; /* Responsive text */
+            font-size: 16px;
+            padding: 2rem;
         }
 
         h1 {
-            text-align: center;
-            margin-top: 30px;
-            color: #333;
-            font-size: 6vw;
+            font-size: 36px;
         }
 
         table {
-            width: 100%;
-            max-width: 100%;
+            width: 80%;
             margin: 20px auto;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow-x: auto;
-            display: block;
+            display: table;
         }
 
         th, td {
-            padding: 12px;
-            border: 1px solid #ddd;
-            text-align: left;
-            font-size: 4vw;
+            font-size: 16px;
         }
+    }
+</style>
 
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        a img {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.3s ease;
-            display: block;
-            margin: 0 auto;
-        }
-
-        a img:hover {
-            transform: scale(1.1);
-        }
-
-        @media (min-width: 768px) {
-            body {
-                font-size: 16px;
-            }
-
-            h1 {
-                font-size: 32px;
-            }
-
-            th, td {
-                font-size: 16px;
-            }
-        }
-    </style>
 </head>
 <body>
 
